@@ -1,0 +1,238 @@
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1{
+    font-family: 'Montserrat-Black', sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+h2{
+    font-family: 'Montserrat-Black', sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+h3{
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+/* navigation */
+
+.navbar{
+    padding: 4.5rem, 0, 0, 0;
+}
+
+.navbar-brand{
+    font-size: 2.5rem;
+    color: #ffffff;
+    padding-left: 5%;
+}
+
+.title-row{
+    padding: 5% 10% 5% 10%;
+}
+
+.btn-lg{
+    margin: 40px 10px 20px 0px;
+}
+
+/* title page */
+
+#title{
+    background-color: #1A2B6A;
+    color: #ffffff;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    line-height: 1.5;
+    margin: auto;
+    z-index: 0;
+    position: relative;
+}
+
+.title-img{
+    transform:rotate(15deg) scale(80%);
+    margin: -10% auto auto;
+    z-index: 0;
+    position: absolute;
+}
+/* showcase */
+#showcase{
+    padding: 3% 7%;
+    text-align: center;
+    color: #ffffff;
+    background-color: #535D9B;
+    position: relative;
+
+    z-index: 4;
+
+}
+
+.show-img{
+    max-height: 400px;
+    width: 370px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+
+.carousel-caption{
+    background:rgba(83, 93, 155, 0.5);
+}
+
+/* features */
+
+.feature-box{
+    padding: 5%;
+    color: #1A2B6A;
+}
+
+.feature-icon{
+    color: #535D9B;
+}
+
+.feature-icon:hover{
+    color: #FFD09B;
+}
+
+#features{
+    padding: 7% 15%;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+/* testimonial */
+
+#testimonials{
+    padding: 3% 7%;
+    text-align: center;
+    color: #ffffff;
+    background-color: #535D9B;
+}
+
+.testimonial-image{
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+#press{
+    padding: 3% 7%;
+    text-align: center;
+    color: #ffffff;
+    background-color: #535D9B;
+}
+
+.press-img{
+    margin: 20px;
+    size: 80%;
+}
+
+.carousel-item{
+    padding: 7% 15%;
+}
+
+/* price */
+
+#pricing > h3 {
+color: #ffffff;
+}
+
+#pricing{
+    padding: 7% 7% 0% 7%;
+    background-color: #1A2B6A;
+    background-image: url(../images/silver.png);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: 400px;
+    text-align: center;
+}
+
+/* cta */
+
+#cta{
+    padding: 7% 7% 3% 7%;
+    text-align: center;
+    background-color: #535D9B;
+    color: #ffffff;
+}
+
+/* footer */
+
+#footer{
+    padding: 7% 7% 3% 7%;
+    text-align: center;
+    color: #1A2B6A;
+    background-color: #ffffff;
+
+}
+
+.social-icon{
+    padding: 0 5px 0;
+    color: black;
+}
+
+.social-icon:hover{
+    color: #FFD09B;
+}
+
+@media (max-width: 770px) {
+    .title-img{
+        position: static;
+        transform: scale(90%);
+        margin: auto;
+    }
+    #title{
+        text-align: center;
+    }
+}
+
+#roses{
+    height: 320px;
+}
+
+.corner-ribbon{
+    width: 400px;
+    position: fixed;
+    
+    top: 50px;
+    right: -100px;
+    left: auto;
+    z-index: 5;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    background: #FFD09B;
+    color: #1A2B6A;
+    
+    
+    
+    box-shadow: 0 0 3px rgba(0,0,0,.3);
+    text-align: center;
+    
+    font-family: 'Montserrat-Black', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 900;
+    
+    padding: 10px;
+}
+
+.form-signin{
+    max-width: 500px;
+    margin: auto;
+}
+
+#footer .btn-lg{
+    margin: 20px auto;
+}
+
+#footer .btn-outline-dark {
+    color: #1A2B6A;
+    border-color: #1A2B6A;
+}
+
+#footer .btn-outline-dark:hover {
+    color: #ffffff;
+    background-color: #1A2B6A;
+}
