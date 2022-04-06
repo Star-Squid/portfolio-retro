@@ -1,0 +1,165 @@
+body {
+  background: #606EE8;
+  background-image: 
+    url("../grid.png"),
+    linear-gradient(0deg, #606EE8 0%, rgba(61, 56, 69, 1) 100%);
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Supermercado One', cursive;
+}
+
+h1 {
+  font-family: 'Supermercado One', cursive;
+  color: #FF8276;
+  font-size: 4rem;
+  font-weight: 800;
+  text-shadow: -1px 0 #683CF1, 0 1px #683CF1, 1px 0 #683CF1, 0 -1px #683CF1, 5px 3px 4px #FC04CC;
+  transform: skewY(-11deg);
+  filter: drop-shadow(2px 2px 0.2rem #33364E)
+}
+
+.title {
+  background-image: repeating-linear-gradient(0deg, rgba(158, 169, 240, 0) 0px, rgba(157, 168, 240, 0.1) 20px, rgba(158, 169, 240, 1) 32px, rgba(158, 169, 240, 0.1) 38px);
+}
+
+.container {
+  position: relative;
+  left: -10px;
+  display: flex;
+  flex-flow: column nowrap;
+  font-family: 'Nunito', sans-serif;
+  color: #FFF;
+  text-align: center;
+  width: 100vw;
+  height: 100%;
+}
+
+.instruction {
+  background-image: repeating-linear-gradient(0deg, rgba(158, 169, 240, 0) 0px, rgba(111, 121, 200, 0.8) 9px, rgba(158, 169, 240, 1) 16px, rgba(111, 121, 200, 0.8) 23px, rgba(158, 169, 240, 0) 32px);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100vw;
+  position: relative;
+  font-weight: 900;
+}
+
+.instruction .btn{
+  font-style: oblique;
+}
+
+.flip {
+  height: 30vh;
+  width: 50vh;
+  margin: 0 auto;
+}
+
+.flip .front {
+  background: #8993ee;
+  background: radial-gradient(circle, rgba(137, 147, 238, 1) 56%, rgba(153, 83, 188, 1) 100%);
+  color: #000;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  border: 2px solid #3d3845;
+  border-radius: 20px;
+  filter: drop-shadow(2px 2px 0.2rem #33364E);
+  padding: 5%;
+  overflow: auto;
+}
+
+.flip .back {
+  background: rgb(255, 232, 212);
+  background: radial-gradient(circle, rgba(255, 232, 212, 1) 70%, rgba(255, 171, 188, 1) 100%);
+  color: #000;
+  text-align: center;
+  border: 2px solid #3d3845;
+  border-radius: 20px;
+  filter: drop-shadow(2px 2px 0.2rem #33364E);
+  padding: 5%;
+  overflow: auto;
+}
+
+.containcard{
+  height: 35vh;
+}
+
+dialog {
+  background: rgb(255, 232, 212);
+  background: radial-gradient(circle, rgba(255, 232, 212, 1) 70%, rgba(255, 171, 188, 1) 100%);
+  border: 2px solid #3d3845;
+  border-radius: 20px;
+  filter: drop-shadow(2px 2px 0.2rem #33364E);
+  padding: 1.6rem;
+  max-width: 400px;
+}
+
+dialog button {
+  display: block;
+  margin-top: 2rem;
+  width: 25%;
+  height: 44px;
+  font-family: inherit;
+  background-color: #8993ee;
+  font-size: large;
+  font-weight: 700;
+  border: 1px solid #3d3845;
+  border-radius: 10px;
+  filter: drop-shadow(2px 2px 0.2rem #33364E);
+}
+
+dialog button:hover {
+  background-color: rgb(153, 83, 188);
+  color:  rgb(255, 232, 212);
+  cursor: pointer;
+}
+
+.totheleft{
+  text-align: left;
+}
+
+.tickform {
+  padding: 30px;
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+.btn {
+  margin: 5px;
+  text-align: center;
+  color: #000;
+  background-color: rgb(255, 232, 212);
+  border: 1px outset rgb(255, 232, 212);
+  border-radius: 20px;
+  box-shadow: 2px 5px #606EE8;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background-color: rgb(153, 83, 188)
+}
+
+.btn:active {
+  background-color: #FF8276;
+  color: #fff;
+  box-shadow: 2px 3px #683CF1;
+  transform: translateY(4px);
+}
+
+.smallbutt{
+  font-size: 2rem;
+}
+
+.bigbutt{
+  font-size: 1rem;
+  padding: 5px 10px 5px 10px;
+  margin: 40px;
+  position: relative;
+}
+
+.spacer{
+  height: 40px;
+}
+
+.disappear{
+  visibility: hidden;
+}
