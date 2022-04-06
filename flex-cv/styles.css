@@ -1,0 +1,284 @@
+:root {
+  --white: #faf8f1;
+  --light: #A9DCE1;
+  --medium: #bd6687;
+  --dark: #588B8C;
+  --black: #17333F;
+}
+
+body {
+  background-color: var(--white);
+  color: var(--black);
+  font-family: 'Raleway', sans-serif;
+
+}
+
+
+h1 {
+  color: var(--white);
+}
+
+h2 {
+  color: var(--black);
+  font-size: 0.9rem;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.sectiontitle h2 {
+  font-size: 1.2rem;
+}
+
+.contact h3{
+  color: var(--dark);
+}
+
+h3 {
+  color: var(--medium);
+  font-size: 0.9rem;
+  padding: 5px;
+}
+
+h4 {
+  font-size: 0.9rem;
+  font-style: oblique;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+}
+
+
+div {
+  border-radius: 10px;
+}
+
+img {
+  width: 1em;
+  height: 1em;
+  display: inline bottom;
+  padding-left: 10px;
+}
+
+ul {
+  list-style-type: "\25C6";
+  list-style-position: outside;
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  padding: 5px;
+}
+
+.level {
+  list-style-type: none;
+}
+
+ul li {
+  padding-left: 1rem;
+}
+
+a:link {
+  color: inherit;
+}
+
+a:visited {
+  color: var(--dark);
+}
+
+a:hover {
+  color: var(--medium);
+  text-shadow: 1px 1px 0.2rem var(--light);
+}
+
+a:active {
+  color: var(--light);
+}
+
+.container{
+  max-width: 95vw;
+  min-height: 95vh;
+  padding: 10px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: stretch;
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 10px;
+  padding: 10px;
+}
+
+#one {
+  flex: 2 1 auto;
+}
+
+#two {
+  flex: 1 1 auto;
+}
+
+/* this one has schoolnskills and allexperience */
+#three {
+  flex: 5 1 auto;
+  justify-content: center;
+  gap: 3%;
+}
+
+#four {
+  flex: 1 1 auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagetitle {
+  box-shadow: 2px 2px 0.2rem var(--black);
+  background-color: var(--dark);
+  padding: 10px;
+  flex: 2 1 auto;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.contact {
+  line-height: 1.3rem;
+  padding: 10px;
+  flex: 1 1 auto;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.description {
+  width: 100%;
+  background-color: var(--medium);
+  color: var(--white);
+  box-shadow: 2px 2px 0.2rem var(--black);
+  padding: 10px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.sectiontitle {
+  background-color: var(--white);
+  border: 1px solid var(--black);
+  box-shadow: 2px 2px 0.2rem var(--black);
+}
+
+.sectioncontent{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+}
+
+.sectioncontent.tables {
+  justify-self: center;
+  align-self: center;
+  flex: 0 1 auto;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.progress{
+text-align: right;
+padding: 5px;
+justify-self: center;
+align-self: flex-start;
+font-weight: bold;
+}
+
+.experience {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+
+  padding: 10px;
+  }
+
+
+.dates {
+  /* display: flex;
+  align-self: flex-start; */
+  margin-block-start: auto;
+  writing-mode: vertical-rl;
+  flex: 0 0 auto;
+}
+
+.expcontent {
+  padding-top: 10px;
+  flex: 1 0 0;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+
+.schoolnskill {
+  /* width: 45%; */
+  /* max-width: 615px; */
+  background-color: var(--light);
+  box-shadow: 2px 2px 0.2rem var(--black);
+  flex: 2 1 35%;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 10px;
+
+}
+
+.allskills {
+
+  flex: 1 1 auto;
+
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+}
+
+.allschools{
+  /* width: 100%; */
+  flex: 1 1 auto;
+}
+
+.school {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 10px;
+}
+
+.date {
+  color: var(--medium);
+  font-weight: bold;
+}
+
+.degree {
+  font-style: oblique;
+}
+
+.place {
+  font-weight: bold;
+}
+
+.allexperience {
+  /* width: 50%; */
+  width: 735px;
+  flex: 3 1 50%;
+  background-color: var(--light);
+  box-shadow: 2px 2px 0.2rem var(--black);
+  }
