@@ -1,0 +1,710 @@
+
+
+:root{
+  --white: #EBE7E0;
+  --light: #FCEC92;
+  --medium: #F7C771;
+  --med-grey: #D1CDC5;
+  --dark: #ABA9A4;
+  --black: #000000;
+  --transparency:rgba(0, 0, 0, 0);
+  --seethrough:rgba(31, 0, 92, 0.3);
+
+  --basic: 'Fauna One', serif;
+  --fancy: 'Cinzel Decorative', cursive;
+
+  --domeheight: 45vw;
+
+
+  --timeasdegree: 35deg;
+
+  --minutesasdegree: 48deg;
+
+/* main dome styles */
+  --stripes:
+  conic-gradient(from -90deg at 50% 100%,
+  var(--medium) 20deg,
+  var(--light) 20deg 40deg,
+  var(--medium) 40deg 60deg,
+  var(--light) 60deg 80deg,
+  var(--medium) 80deg 100deg,
+  var(--light) 100deg 120deg,
+  var(--medium) 120deg 140deg,
+  var(--light) 140deg 160deg,
+  var(--medium) 160deg 180deg);
+
+  --app-start: 0deg;
+  --app-end: 0deg;
+
+  --appointment:
+          /* custom appointment */
+          conic-gradient(from -90deg at 50% 100%,
+
+          /* set start of appointment, 1h = 20deg, so 10:00 is 20 deg, 11.30 is 45deg */
+          var(--transparency) var(--app-start),
+
+          /* from start to end */
+         var(--med-grey) var(--app-start) var(--app-end),
+
+         /* from end of appointment to end of day */
+         var(--transparency) var(--app-end) 180deg);
+
+  --overlay:
+  conic-gradient(from -90deg at 50% 100%,
+  var(--seethrough) var(--timeasdegree), 
+  var(--transparency) calc(var(--timeasdegree) + 1deg) 180deg 
+  );
+
+  --makeabigrainbow:
+  radial-gradient(
+      circle at 50% 100%,
+      var(--white) calc(40% - 1px), 
+      transparent 40%);
+
+/* small dome styles */
+  --smallstripes: 
+  conic-gradient(from -90deg at 50% 100%,
+  var(--medium) 40deg,
+  var(--white) 41deg 43deg,
+  var(--medium) 44deg 88deg,
+  var(--white) 89deg 91deg,
+  var(--medium) 92deg 136deg,
+  var(--white) 137deg 139deg,
+  var(--medium) 140deg 180deg);
+
+  --smalloverlay:
+  conic-gradient(from -90deg at 50% 100%,
+  var(--seethrough) var(--minutesasdegree), 
+  var(--transparency) calc(var(--minutesasdegree) + 2deg) 180deg 
+  );
+
+  --makearainbow: 
+    radial-gradient(
+    circle at 50% 100%,
+      var(--white) calc(30% - 1px), 
+      transparent 30%);
+}
+
+@media (max-width: 750px){
+  :root{
+     --domeheight: 45vw;
+   }
+ }
+
+ @media (min-width: 751px){
+  :root{
+     --domeheight: 50vh;
+   }
+ }
+
+:root.eggtheme {
+    --white: #EBE7E0;
+    --light: #FCEC92;
+    --medium: #fdc835;
+    --med-grey: #D1CDC5;
+    --dark: #ABA9A4;
+    --black: #000000;
+    --transparency:rgba(0, 0, 0, 0);
+    --seethrough:rgba(31, 0, 92, 0.3);
+
+    --basic: 'Fauna One', serif;
+    --fancy: 'Cinzel Decorative', cursive;
+
+
+    --timeasdegree: 35deg;
+
+    --minutesasdegree: 48deg;
+
+  /* main dome styles */
+    --stripes:
+    conic-gradient(from -90deg at 50% 100%,
+    var(--medium) 20deg,
+    var(--light) 20deg 40deg,
+    var(--medium) 40deg 60deg,
+    var(--light) 60deg 80deg,
+    var(--medium) 80deg 100deg,
+    var(--light) 100deg 120deg,
+    var(--medium) 120deg 140deg,
+    var(--light) 140deg 160deg,
+    var(--medium) 160deg 180deg);
+
+    --overlay:
+    conic-gradient(from -90deg at 50% 100%,
+    var(--seethrough) var(--timeasdegree), 
+    var(--transparency) calc(var(--timeasdegree) + 1deg) 180deg 
+    );
+
+    --makeabigrainbow:
+    radial-gradient(
+        circle at 50% 100%,
+        var(--white) calc(40% - 1px), 
+        transparent 40%);
+
+  /* small dome styles */
+    --smallstripes: 
+    conic-gradient(from -90deg at 50% 100%,
+    var(--medium) 40deg,
+    var(--white) 41deg 43deg,
+    var(--medium) 44deg 88deg,
+    var(--white) 89deg 91deg,
+    var(--medium) 92deg 136deg,
+    var(--white) 137deg 139deg,
+    var(--medium) 140deg 180deg);
+
+    --smalloverlay:
+    conic-gradient(from -90deg at 50% 100%,
+    var(--seethrough) var(--minutesasdegree), 
+    var(--transparency) calc(var(--minutesasdegree) + 2deg) 180deg 
+    );
+
+    --makearainbow: 
+      radial-gradient(
+      circle at 50% 100%,
+        var(--white) calc(30% - 1px), 
+        transparent 30%);
+  }
+
+  :root.sunrisetheme {
+    --white: #FDEAE4;
+    --light: #E1FDFD;
+    --medium: #D18CBB;
+    --med-grey: #7f8286;
+    --dark: #ABD1E0;
+    --black: #004063;
+    --transparency:rgba(0, 0, 0, 0);
+    --seethrough:rgba(132, 73, 131, 0.7);
+
+    --basic: 'Quicksand', sans-serif;
+    --fancy: 'Pacifico', cursive;
+
+    /* --domeheight: 50vh; */
+
+    --timeasdegree: 35deg;
+
+    --minutesasdegree: 48deg;
+
+  /* main dome styles */
+    --stripes:
+    conic-gradient(from -90deg at 50% 100%,
+    var(--dark) 20deg,
+    var(--light) 20deg 40deg,
+    var(--dark) 40deg 60deg,
+    var(--light) 60deg 80deg,
+    var(--dark) 80deg 100deg,
+    var(--light) 100deg 120deg,
+    var(--dark) 120deg 140deg,
+    var(--light) 140deg 160deg,
+    var(--dark) 160deg 180deg);
+
+    --overlay:
+    conic-gradient(from -90deg at 50% 100%,
+    var(--seethrough) var(--timeasdegree), 
+    var(--transparency) calc(var(--timeasdegree) + 1deg) 180deg 
+    );
+
+    --makeabigrainbow:
+    radial-gradient(
+        circle at 50% 100%,
+        var(--white) calc(40% - 1px), 
+        transparent 40%);
+
+  /* small dome styles */
+    --smallstripes: 
+    conic-gradient(from -90deg at 50% 100%,
+    var(--medium) 40deg,
+    var(--white) 41deg 43deg,
+    var(--medium) 44deg 88deg,
+    var(--white) 89deg 91deg,
+    var(--medium) 92deg 136deg,
+    var(--white) 137deg 139deg,
+    var(--medium) 140deg 180deg);
+
+    --smalloverlay:
+    conic-gradient(from -90deg at 50% 100%,
+    var(--seethrough) var(--minutesasdegree), 
+    var(--transparency) calc(var(--minutesasdegree) + 2deg) 180deg 
+    );
+
+    --makearainbow: 
+      radial-gradient(
+      circle at 50% 100%,
+        var(--white) calc(30% - 1px), 
+        transparent 30%);
+  }
+
+
+  :root.sunsettheme {
+    --white: #028097;
+    --light: #FFB202;
+    --medium: #FD7400;
+    --med-grey: #D1CDC5;
+    --dark: #005081;
+    --black: #0f2d3b;
+    --transparency:rgba(0, 0, 0, 0);
+    --seethrough:rgba(31, 0, 92, 0.3);
+
+    --basic: 'Fauna One', serif;
+    --fancy: 'Berkshire Swash', cursive;
+
+    /* --domeheight: 50vh; */
+
+    --timeasdegree: 35deg;
+
+    --minutesasdegree: 48deg;
+
+  /* main dome styles */
+    --stripes:
+    conic-gradient(from -90deg at 50% 100%,
+    var(--medium) 20deg,
+    var(--light) 21deg 40deg,
+    var(--medium) 41deg 60deg,
+    var(--light) 61deg 80deg,
+    var(--medium) 81deg 100deg,
+    var(--light) 101deg 120deg,
+    var(--medium) 121deg 140deg,
+    var(--light) 141deg 160deg,
+    var(--medium) 161deg 180deg);
+
+    --overlay:
+    conic-gradient(from -90deg at 50% 100%,
+    var(--seethrough) var(--timeasdegree), 
+    var(--transparency) calc(var(--timeasdegree) + 1deg) 180deg 
+    );
+
+    --makeabigrainbow:
+    radial-gradient(
+        circle at 50% 100%,
+        var(--white) calc(40% - 1px), 
+        transparent 40%);
+
+  /* small dome styles */
+    --smallstripes: 
+    conic-gradient(from -90deg at 50% 100%,
+    var(--medium) 40deg,
+    var(--white) 41deg 43deg,
+    var(--medium) 44deg 88deg,
+    var(--white) 89deg 91deg,
+    var(--medium) 92deg 136deg,
+    var(--white) 137deg 139deg,
+    var(--medium) 140deg 180deg);
+
+    --smalloverlay:
+    conic-gradient(from -90deg at 50% 100%,
+    var(--seethrough) var(--minutesasdegree), 
+    var(--transparency) calc(var(--minutesasdegree) + 2deg) 180deg 
+    );
+
+    --makearainbow: 
+      radial-gradient(
+      circle at 50% 100%,
+        var(--white) calc(30% - 1px), 
+        transparent 30%);
+  }
+
+
+  :root.newstheme {
+    --white: #EBE7E0;
+    --light: #a5a5a5;
+    --medium: #919090;
+    --med-grey: #d1d1d1;
+    --dark: #7c7c7c;
+    --black: #000000;
+    --transparency:rgba(0, 0, 0, 0);
+    --seethrough:rgba(71, 71, 71, 0.699);
+
+    --basic: 'Fauna One', serif;
+    --fancy: 'Abril Fatface', cursive;;
+
+    /* --domeheight: 50vh; */
+
+    --timeasdegree: 35deg;
+
+    --minutesasdegree: 48deg;
+
+  /* main dome styles */
+    --stripes:
+    url(news.png);
+
+    --overlay:
+    conic-gradient(from -90deg at 50% 100%,
+    var(--seethrough) var(--timeasdegree), 
+    var(--transparency) calc(var(--timeasdegree) + 1deg) 180deg 
+    );
+
+    --makeabigrainbow:
+    radial-gradient(
+        circle at 50% 100%,
+        var(--white) calc(40% - 1px), 
+        transparent 40%);
+
+
+  /* small dome styles */
+    --smallstripes: 
+    url(small-news.png);
+
+    --smalloverlay:
+    conic-gradient(from -90deg at 50% 100%,
+    var(--seethrough) var(--minutesasdegree), 
+    var(--transparency) calc(var(--minutesasdegree) + 2deg) 180deg 
+    );
+
+    --makearainbow: 
+      radial-gradient(
+      circle at 50% 100%,
+        var(--white) calc(30% - 1px), 
+        transparent 30%);
+  }
+
+
+  :root.pizzatheme {
+    --white: #DFB587;
+    --light: #DD4F23;
+    --medium: #f48443;
+    --med-grey: #DD4F23;
+    --dark: #CD9761;
+    --black: #233d24;
+    --transparency:rgba(0, 0, 0, 0);
+    --seethrough:rgba(143, 16, 16, 0.5);
+
+    --basic: 'Fauna One', serif;
+    --fancy: 'Rancho', cursive;
+
+    /* --domeheight: 50vh; */
+
+    --timeasdegree: 35deg;
+
+    --minutesasdegree: 48deg;
+
+  /* main dome styles */
+    --stripes:
+    url("painted-pizza.png");
+    
+
+    --overlay:
+    conic-gradient(from -90deg at 50% 100%,
+    var(--seethrough) var(--timeasdegree), 
+    var(--transparency) calc(var(--timeasdegree) + 1deg) 180deg 
+    );
+
+    --makeabigrainbow:
+    radial-gradient(
+      circle at 50% 100%,
+        transparent 30%, 
+        transparent 30%);
+
+
+  /* small dome styles */
+    --smallstripes:
+    url("small-pizza.png");
+
+    --smalloverlay:
+    conic-gradient(from -90deg at 50% 100%,
+    var(--seethrough) var(--minutesasdegree), 
+    var(--transparency) calc(var(--minutesasdegree) + 2deg) 180deg 
+    );
+
+    --makearainbow: 
+    radial-gradient(
+      circle at 50% 100%,
+        transparent 30%, 
+        transparent 30%);
+  }
+
+  div, 
+  div:before, 
+  div:after {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: var(--white);
+    background-color: var(--white);
+    color: var(--black);
+    font-family: var(--basic);
+    text-align: center;
+    background-image: linear-gradient(0deg, var(--white) 0% 50%, var(--dark) 100%);
+  }
+
+  @media (max-width: 750px){
+    .container{
+      width: 98vw;
+      height: 95vh;
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 1fr 2fr 1fr 1fr 1fr;
+    }
+   }
+  
+   @media (min-width: 751px){
+  .container{
+    width: 98vw;
+    height: 97vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 0.5fr 6fr 1.5fr 1fr 1fr;
+  }
+   }
+
+  .main-dome{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+
+    height: var(--domeheight);
+    width: calc(var(--domeheight) * 2);
+    border-top-left-radius: calc(var(--domeheight) * 2);
+    border-top-right-radius: calc(var(--domeheight) * 2);
+
+    background: 
+        var(--makeabigrainbow),
+        var(--overlay),
+        var(--appointment),
+        var(--stripes);
+
+    background-size: 100%;
+  }  
+ 
+  .cell-4{
+  background-color: var(--dark);
+  position: relative;
+  z-index: -1;
+  overflow: hidden;
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  }
+
+  .currenthour{
+    position: relative;
+    z-index: 5;
+  }
+
+  .hours{
+  position: absolute;
+  width: calc((var(--domeheight) * 2));
+  height: var(--domeheight);
+  }
+
+  .number  {
+  font-family: var(--basic);
+  font-size: 1.5 rem;
+  height: calc(var(--domeheight) + 1.5rem);
+  position: absolute;
+  display:inline-block;
+  top: -1.5rem;
+  left: calc(50% - 0.75rem);
+  width: 1.5rem;
+  transform-origin: bottom center;
+  }
+
+ .number:first-child{
+  transform: rotate(-90deg)
+ }
+ .number:nth-child(2){
+  transform: rotate(-70deg)
+} 
+.number:nth-child(3){
+  transform: rotate(-50deg)
+} 
+.number:nth-child(4){
+  transform: rotate(-30deg)
+} 
+.number:nth-child(5){
+  transform: rotate(-10deg)
+} 
+.number:nth-child(6){
+  transform: rotate(10deg)
+} 
+.number:nth-child(7){
+  transform: rotate(30deg)
+} 
+.number:nth-child(8){
+  transform: rotate(50deg)
+} 
+.number:nth-child(9){
+  transform: rotate(70deg)
+} 
+ .number:last-child{
+transform:rotate(90deg);
+} 
+
+.small-dome{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+
+  height: calc(var(--domeheight) / 4);
+  width: calc(var(--domeheight) / 2);
+  border-top-left-radius: calc(var(--domeheight) / 2);
+  border-top-right-radius: calc(var(--domeheight) / 2);
+
+  background: 
+    var(--makearainbow),
+    var(--smalloverlay),
+    var(--smallstripes);
+
+  background-size: 100%;
+}
+
+  h1{
+    font-family: var(--fancy);
+    font-size: 2rem;
+    margin: 3% auto 3%;
+  }
+
+  h2 {
+    font-family: var(--fancy);
+    font-size: 1.5rem;
+    padding: 0;
+    margin: auto;
+  }
+
+  h3 {
+    font-family: var(--basic);
+    font-size: 0.6rem;
+    padding: 0;
+    margin: auto;
+  }
+
+  /* colour themes */
+  .themeButton {
+    background:linear-gradient(to bottom, var(--light) 5%, var(--medium) 100%);
+    background-color:var(--light);
+    border-radius:10px;
+    border:3px solid var(--dark);
+    /* display:inline-block; */
+    cursor:pointer;
+    color:var(--black);
+    padding:8px 3px;
+    margin: 8px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px var(--dark);
+  }
+
+  .spin-app{
+    justify-self: flex-end;
+  }
+
+  .spin-in {
+    height: 1px;
+    width: 1px;
+    opacity: 0;
+    transition: all .25s ease;
+  }
+  
+  .spin-in.show2 {
+    opacity: 1;
+    width: 67px;
+    height: 67px;
+  }
+
+  .themeButton:hover {
+    background:linear-gradient(to bottom, var(--medium) 5%, var(--dark) 100%);
+    background-color:var(--medium);
+  }
+  .themeButton:active {
+    position:relative;
+    top:1px;
+  }
+
+.cell-5{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-items: center;
+  align-content: space-between;
+  gap: 5px;
+}
+.theme:before{
+  content: " ";
+  z-index: -1;
+  width: 67px;
+  height: 67px;
+  border: solid 4px var(--dark);
+  position: absolute;
+  border-radius: 5px;
+  top: -5px;
+  left: -5px;
+  right: 5px;
+  bottom: 5px;
+}
+
+.theme{
+  position: relative;
+  width: 62px;
+  height: 62px;
+  border: solid 3px var(--white);
+  border-radius: 5px;
+  display: flex;
+  align-items: flex-end;
+  justify-items: center;
+  text-align: center;
+  transform: scale(0.7);
+  flex-basis: auto;
+  cursor:pointer;
+}
+
+.dummytheme{
+  width: 1px;
+  height: 63px;
+}
+
+.theme:hover{
+  transform: scale(1);
+  transition-delay: 0.5s ease;
+}
+
+.egg{
+  background: rgb(255,255,255);
+  background: linear-gradient(145deg, rgba(255,255,255,1) 0%, rgba(248,208,121,1) 40%, rgba(171,170,164,1) 100%);
+}
+
+.sunrise{
+  background: rgb(146,208,231);
+  background: linear-gradient(145deg, rgba(146,208,231,1) 0%, rgba(249,228,233,1) 43%, rgba(252,211,191,1) 82%, rgba(249,159,159,1) 100%);}
+
+.sunset{
+  background: rgb(227,47,12);
+  background: linear-gradient(137deg, rgba(227,47,12,1) 2%, rgba(64,132,255,1) 50%, rgba(245,227,155,1) 100%);
+}
+
+.news{
+  background: rgb(55,51,50);
+  background: linear-gradient(145deg, rgba(55,51,50,1) 2%, rgba(128,131,136,1) 19%, rgba(238,238,238,1) 73%);
+}
+
+.pizza{
+  background: rgb(227,47,12);
+  background: linear-gradient(137deg, rgba(227,47,12,1) 2%, rgba(255,202,64,1) 50%, rgba(245,226,199,1) 100%);
+}
+
+/* dialog and form */
+.no-close .ui-dialog-titlebar-close {
+  display: none;
+}
+
+.formbox{
+  text-align: center;
+  margin: auto;
+  padding: 5px;
+}
+
+.timebox{
+  margin-bottom: 25px;
+}
+
+.submit-button{
+  /* margin: 10%; */
+  padding: 10px;
+}
+
+.ui-dialog-titlebar{
+  background:linear-gradient(to bottom, var(--medium) 5%, var(--dark) 100%);
+  background-color:var(--medium);
+}
+
+.ui-dialog-content{
+  color: var(--black);
+  background: var(--white);
+}
