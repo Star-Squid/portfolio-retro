@@ -14,13 +14,13 @@
     font-size: 1rem;
 }
 
-* { 
-    -moz-box-sizing: border-box; 
-    -webkit-box-sizing: border-box; 
-     box-sizing: border-box; 
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+     box-sizing: border-box;
 }
 
-  
+
 body {
     background-color: var(--black);
     background-image: radial-gradient(var(--medium) 1px, transparent 0);
@@ -45,7 +45,7 @@ a:link, a:visited {
 
 a:hover{
     color: var(--white);
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 a:active {
@@ -62,11 +62,11 @@ a:active {
 .container{
     width: 80vw;
     max-width: 1200px;
-    min-width: 881px;
+    /* min-width: 881px; */
     height: 90vh;
     margin: 50px auto 20px auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 3fr 2fr;
     grid-template-rows: 1fr;
     grid-template-areas: "left-half right-half";
     gap: 20px;
@@ -108,33 +108,14 @@ a:active {
     position: relative;
     left: -40px;
     text-align: center;
-    transition-duration: 0.4s;
 }
 
-  @media (min-width: 1300px) {
-    .corkboard  .shape {
-        transform: scale(125%) rotate(-5deg);
-    }
-
-    .corkboard  
-    .circle {
-        top: -3%;
-        z-index: 2;
-    }
-
-    .corkboard  
-    .list {
-        transform: scale(125%) rotate(5deg);
-        z-index: 1;
-        top: -25%;
-    }
-  }
 
 /* ---pure style---- */
 
 .blocky{
-    box-shadow: 
-    1px 0px 1px var(--blacker), 0px 1px 1px var(--almostblack), 
+    box-shadow:
+    1px 0px 1px var(--blacker), 0px 1px 1px var(--almostblack),
     2px 1px 1px var(--blacker), 1px 2px 1px var(--almostblack),
     3px 2px 1px var(--blacker), 2px 3px 1px var(--almostblack),
     4px 3px 1px var(--blacker), 3px 4px 1px var(--almostblack),
@@ -148,7 +129,7 @@ a:active {
     filter:
         drop-shadow(-1px -1px 0px var(--blacker))
         drop-shadow(1px 1px 0px var(--black))
-        drop-shadow(6px 6px 0px var(--black));    
+        drop-shadow(6px 6px 0px var(--black));
     border: solid var(--black) 2px;
 }
 
@@ -159,8 +140,8 @@ a:active {
     position: relative;
     z-index: 5;
     padding-left: 10px;
-    text-shadow: 
-    1px 0px 1px var(--blacker), 0px 1px 1px var(--almostblack), 
+    text-shadow:
+    1px 0px 1px var(--blacker), 0px 1px 1px var(--almostblack),
     2px 1px 1px var(--blacker), 1px 2px 1px var(--almostblack),
     3px 2px 1px var(--blacker), 2px 3px 1px var(--almostblack),
     4px 3px 1px var(--blacker), 3px 4px 1px var(--almostblack),
@@ -179,7 +160,6 @@ a:active {
 .clicky:hover{
     background-color: var(--black);
     color: var(--white);
-    transition-duration: 0.4s;
 }
 
 .clicky:active{
@@ -250,7 +230,7 @@ a:active {
     border-width: 0 25px 43.3px 25px;
     border-color: transparent transparent var(--black) transparent;
     transform: rotate(-20deg);
-    color: var(--almostblack)''
+    color: var(--almostblack);
 }
 
 .triangle-secret{
@@ -334,7 +314,7 @@ a:active {
 .list{
     text-align: left;
     width: 200px;
-    height: 150px;
+    height:auto !important;
     padding: 5px;
     background: var(--white);
     border: solid 1px var(--almostblack);
@@ -383,7 +363,7 @@ a:active {
     filter:
         drop-shadow(-1px -1px 0px var(--blacker))
         drop-shadow(1px 1px 0px var(--black))
-        drop-shadow(4px 4px 0px var(--black));  
+        drop-shadow(4px 4px 0px var(--black));
 }
 
 .languages .date{
@@ -396,64 +376,51 @@ a:active {
     display: none;
 }
 
+.panel{
+  background-color: var(--peach);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .cv{
-    background-color: var(--peach);
-    background-image: 
+    background-image:
         linear-gradient(90deg, var(--white) 0% 5px, transparent 5px calc(100% - 5px), var(--white) calc(100% - 5px)),
         linear-gradient(0deg,  var(--white) 0% 5px, transparent 5px calc(100% - 5px), var(--white) calc(100% - 5px)),
         url(img/panel-cv.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .clock{
-    background-color: var(--peach);
-    background-image: 
+    background-image:
         linear-gradient(90deg, var(--white) 0% 5px, transparent 5px calc(100% - 5px), var(--white) calc(100% - 5px)),
         linear-gradient(0deg,  var(--white) 0% 5px, transparent 5px calc(100% - 5px), var(--white) calc(100% - 5px)),
         url(img/panel-clock.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .flashcards{
-    background-color: var(--peach);
-    background-image: 
+    background-image:
         linear-gradient(90deg, var(--white) 0% 5px, transparent 5px calc(100% - 5px), var(--white) calc(100% - 5px)),
         linear-gradient(0deg,  var(--white) 0% 5px, transparent 5px calc(100% - 5px), var(--white) calc(100% - 5px)),
         url(img/panel-flashcards.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .highfive{
-    background-color: var(--peach);
-    background-image: 
+    background-image:
         linear-gradient(90deg, var(--white) 0% 5px, transparent 5px calc(100% - 5px), var(--white) calc(100% - 5px)),
         linear-gradient(0deg,  var(--white) 0% 5px, transparent 5px calc(100% - 5px), var(--white) calc(100% - 5px)),
         url(img/panel-highfive.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .memory{
-    background-color: var(--peach);
-    background-image: 
+    background-image:
         linear-gradient(90deg, var(--white) 0% 5px, transparent 5px calc(100% - 5px), var(--white) calc(100% - 5px)),
         linear-gradient(0deg,  var(--white) 0% 5px, transparent 5px calc(100% - 5px), var(--white) calc(100% - 5px)),
         url(img/panel-memory.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .hookd{
     background-color: var(--peach);
-    background-image: 
+    background-image:
         linear-gradient(90deg, var(--white) 0% 5px, transparent 5px calc(100% - 5px), var(--white) calc(100% - 5px)),
         linear-gradient(0deg,  var(--white) 0% 5px, transparent 5px calc(100% - 5px), var(--white) calc(100% - 5px)),
         url(img/panel-hookd.png);
@@ -463,45 +430,61 @@ a:active {
 }
 
 .art{
-    background-color: var(--peach);
-    background-image: 
+    background-image:
         linear-gradient(90deg, var(--white) 0% 5px, transparent 5px calc(100% - 5px), var(--white) calc(100% - 5px)),
         linear-gradient(0deg,  var(--white) 0% 5px, transparent 5px calc(100% - 5px), var(--white) calc(100% - 5px)),
         url(img/panel-art.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .artlinks{
-    background-color: var(--peach);
-    background-image: 
+    background-image:
         linear-gradient(90deg, var(--white) 0% 5px, transparent 5px calc(100% - 5px), var(--white) calc(100% - 5px)),
         linear-gradient(0deg,  var(--white) 0% 5px, transparent 5px calc(100% - 5px), var(--white) calc(100% - 5px)),
         url(img/panel-artlinks.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+}
+
+.welcome{
+    background-image:
+        linear-gradient(90deg, var(--white) 0% 5px, transparent 5px calc(100% - 5px), var(--white) calc(100% - 5px)),
+        linear-gradient(0deg,  var(--white) 0% 5px, transparent 5px calc(100% - 5px), var(--white) calc(100% - 5px)),
+        url(img/panel-welcome.png);
 }
 
 /* ---media---- */
+@media (min-width: 1300px) {
+  .corkboard  .shape {
+      transform: scale(125%) rotate(-5deg);
+  }
+
+  .corkboard
+  .circle {
+      top: -3%;
+      z-index: 0;
+  }
+
+  .corkboard
+  .list {
+      transform: scale(125%) rotate(5deg);
+      z-index: 1;
+      top: -25%;
+  }
+}
+
 @media (max-width: 700px) {
     .container {
 
         width: 90vw;
-        max-width: 700px;
-        min-width: 600px;
         height: 90vh;
         margin: 20px auto 10px auto;
-    
+
         display: grid;
-        grid-template-columns: 3fr 2fr;
+        grid-template-columns: 3fr 1fr;
         grid-template-rows: 1fr;
         grid-template-areas: "left-half right-half";
     }
 
     .corkboard{
-        height: 80%;
+        height: 75%;
         width: 100%;
         position: relative;
         left: -60px;
@@ -529,4 +512,4 @@ a:active {
         border-top: 24px solid transparent;
         border-bottom: 12px solid var(--blue);
       }
-} 
+}
