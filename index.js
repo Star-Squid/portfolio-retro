@@ -1,8 +1,8 @@
 let decorations = ".square, .bubble, .triangle, .circle-two, .circle, .list, .icons";
-let corkboardWidth = $( ".corkboard" ).width();
+// let corkboardWidth = $( ".corkboard" ).width();
 
 $( "#cv" ).hover(function() {
-    $( ".corkboard" ).width(corkboardWidth + "px");
+    // $( ".corkboard" ).width(corkboardWidth + "px");
     $( ".corkboard" ).toggleClass("panel");
     $( ".corkboard" ).toggleClass("cv");
     $(decorations).toggleClass("disappear");
@@ -11,7 +11,7 @@ $( "#cv" ).hover(function() {
 });
 
 $( "#flashcards" ).hover(function() {
-    $( ".corkboard" ).width(corkboardWidth + "px");
+    // $( ".corkboard" ).width(corkboardWidth + "px");
     $( ".corkboard" ).toggleClass("panel");
     $( ".corkboard" ).toggleClass("flashcards");
     $(decorations).toggleClass("disappear");
@@ -20,7 +20,7 @@ $( "#flashcards" ).hover(function() {
 });
 
 $( "#memory" ).hover(function() {
-    $( ".corkboard" ).width(corkboardWidth + "px");
+    // $( ".corkboard" ).width(corkboardWidth + "px");
     $( ".corkboard" ).toggleClass("panel");
     $( ".corkboard" ).toggleClass("memory");
     $(decorations).toggleClass("disappear");
@@ -29,7 +29,7 @@ $( "#memory" ).hover(function() {
 });
 
 $( "#clock" ).hover(function() {
-    $( ".corkboard" ).width(corkboardWidth + "px");
+    // $( ".corkboard" ).width(corkboardWidth + "px");
     $( ".corkboard" ).toggleClass("panel");
     $( ".corkboard" ).toggleClass("clock");
     $(decorations).toggleClass("disappear");
@@ -38,7 +38,7 @@ $( "#clock" ).hover(function() {
 });
 
 $( "#art" ).hover(function() {
-    $( ".corkboard" ).width(corkboardWidth + "px");
+    // $( ".corkboard" ).width(corkboardWidth + "px");
     $( ".corkboard" ).toggleClass("panel");
     $( ".corkboard" ).toggleClass("art");
     $(decorations).toggleClass("disappear");
@@ -56,7 +56,7 @@ $( "#hookd" ).hover(function() {
 });
 
 $( "#highfive" ).hover(function() {
-    $( ".corkboard" ).width(corkboardWidth + "px");
+    // $( ".corkboard" ).width(corkboardWidth + "px");
     $( ".corkboard" ).toggleClass("panel");
     $( ".corkboard" ).toggleClass("highfive");
     $(decorations).toggleClass("disappear");
@@ -65,7 +65,7 @@ $( "#highfive" ).hover(function() {
 });
 
 $( "#welcome" ).hover(function() {
-    $( ".corkboard" ).width(corkboardWidth + "px");
+    // $( ".corkboard" ).width(corkboardWidth + "px");
     $( ".corkboard" ).toggleClass("panel");
     $( ".corkboard" ).toggleClass("welcome");
     $(decorations).toggleClass("disappear");
@@ -74,7 +74,7 @@ $( "#welcome" ).hover(function() {
 });
 
 $( "#artlinks" ).hover(function() {
-    $( ".corkboard" ).width(corkboardWidth + "px");
+    // $( ".corkboard" ).width(corkboardWidth + "px");
     $( ".corkboard" ).toggleClass("panel");
     $( ".corkboard" ).toggleClass("artlinks");
     $(decorations).toggleClass("disappear");
