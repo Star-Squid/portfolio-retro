@@ -47,7 +47,7 @@ $( "#art" ).hover(function() {
 });
 
 $( "#hookd" ).hover(function() {
-    $( ".corkboard" ).width(corkboardWidth + "px");
+    // $( ".corkboard" ).width(corkboardWidth + "px");
     $( ".corkboard" ).toggleClass("panel");
     $( ".corkboard" ).toggleClass("hookd");
     $(decorations).toggleClass("disappear");
