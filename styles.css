@@ -347,7 +347,10 @@ a:active {
     position: absolute;
     right: 0px;
     bottom: 0px;
+    width: 170px;
+    height: auto;
     padding: 5px;
+    z-index: 1;
 }
 
 .languages li{
@@ -486,8 +489,9 @@ a:active {
     .corkboard{
         height: 75%;
         width: 100%;
+        min-width: 200px;
         position: relative;
-        left: -60px;
+        left: -40px;
     }
 
     .triangle{
@@ -502,7 +506,7 @@ a:active {
 
     .list{
         width: 170px;
-        height: 150px;
+        height: auto;
         padding: 5px;
     }
 
